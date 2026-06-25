@@ -44,9 +44,6 @@ export default function App() {
           <button onClick={() => document.getElementById('notes-section').scrollIntoView({ behavior: 'smooth' })} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 24px', background: 'var(--text-primary)', color: 'var(--surface)', borderRadius: 'var(--radius-md)', fontSize: '15px', fontWeight: 500, border: 'none', cursor: 'pointer' }}>
             Ver apuntes <ChevronDown size={16} />
           </button>
-          <a href="https://ko-fi.com/melinarivera" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 24px', border: '1px solid var(--border-strong)', borderRadius: 'var(--radius-md)', fontSize: '15px', color: 'var(--text-primary)', background: 'transparent' }}>
-            <Coffee size={15} /> Invítame un café
-          </a>
         </div>
       </section>
 
