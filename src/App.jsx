@@ -69,7 +69,7 @@ export default function App() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: '1.25rem' }}>
-              <div style={{ width: 40, height: 40, background: 'var(--indigo)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: 'var(--font-serif)', fontSize: '18px', fontStyle: 'italic', fontWeight: 500 }}>T</div>
+              <img src="/logo.png" alt="Tesovia" style={{ width: 40, height: 40, objectFit: 'contain' }} />
               <div>
                 <p style={{ fontSize: '11px', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 500 }}>También creé esto</p>
                 <p style={{ fontSize: '15px', fontWeight: 500 }}>Tesovia</p>
