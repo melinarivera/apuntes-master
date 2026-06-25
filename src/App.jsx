@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, ExternalLink, ChevronDown, Sparkles, ArrowUpRight, Coffee, Smartphone, Heart } from 'lucide-react'
+import { BookOpen, ChevronDown, Sparkles, ArrowUpRight, Coffee, Smartphone, Heart, Brain, Quote, Lightbulb } from 'lucide-react'
 import NoteCard from './NoteCard'
 import './index.css'
 
@@ -25,7 +25,7 @@ export default function App() {
           <span style={{ fontFamily: 'var(--font-serif)', fontWeight: 500, fontSize: '16px' }}>Apuntes del máster</span>
         </div>
         <a href="https://ko-fi.com/melinarivera" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '8px 16px', background: 'var(--indigo)', color: '#fff', borderRadius: 'var(--radius-md)', fontSize: '13px', fontWeight: 500 }}>
-          <Coffee size={13} /> Invítame a un café
+          <Coffee size={13} /> Invítame un café
         </a>
       </nav>
 
@@ -45,7 +45,7 @@ export default function App() {
             Ver apuntes <ChevronDown size={16} />
           </button>
           <a href="https://ko-fi.com/melinarivera" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '13px 24px', border: '1px solid var(--border-strong)', borderRadius: 'var(--radius-md)', fontSize: '15px', color: 'var(--text-primary)', background: 'transparent' }}>
-            <Coffee size={15} /> Invítame a un café
+            <Coffee size={15} /> Invítame un café
           </a>
         </div>
       </section>
@@ -83,20 +83,27 @@ export default function App() {
               <em style={{ color: 'var(--indigo)', fontStyle: 'italic' }}>duela un poco menos.</em>
             </h2>
             <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: '1.5rem' }}>
-              Lo construí porque lo necesitaba. Revisa tus citas APA y Harvard para que la bibliografía de tu TFM esté impecable.
+              Lo construí porque lo necesitaba. Tesovia te acompaña desde la primera idea hasta la entrega: citas, feedback, detección de IA y bibliografía. Si están con el TFM, vale mucho la pena.
             </p>
             <a href="https://www.tesovia.com" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '11px 20px', background: 'var(--indigo)', borderRadius: 'var(--radius-md)', fontSize: '14px', fontWeight: 500, color: '#fff' }}>
-              Probar Tesovia <ArrowUpRight size={14} />
+              Conocer Tesovia <ArrowUpRight size={14} />
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '18px 20px', background: 'var(--surface-raised)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)' }}>
-              <span style={{ fontSize: '20px', lineHeight: 1, marginTop: '1px' }}>📚</span>
-              <div>
-                <p style={{ fontSize: '14px', fontWeight: 500, marginBottom: '3px' }}>Citas APA, Harvard, MLA</p>
-                <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>Genera y revisa bibliografías correctas automáticamente. Solo pega tu texto y Tesovia se encarga del formato.</p>
+            {[
+              { Icon: Brain, title: 'Feedback académico', desc: 'Análisis de argumento, estructura y claridad en cada capítulo.' },
+              { Icon: Quote, title: 'Revisor APA · MLA · IEEE', desc: 'Detecta y corrige errores en 7 formatos de citación distintos.' },
+              { Icon: Lightbulb, title: 'Detector de IA y plagio', desc: 'Analiza la originalidad de tu trabajo antes que tu universidad.' },
+              { Icon: BookOpen, title: 'Bibliografía sugerida', desc: 'Fuentes reales de Scopus, JCR y Google Scholar para tu tema.' },
+            ].map(({ Icon, title, desc }) => (
+              <div key={title} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', padding: '14px 16px', background: 'var(--surface-raised)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)' }}>
+                <Icon size={20} color="var(--indigo)" style={{ flexShrink: 0, marginTop: '1px' }} />
+                <div>
+                  <p style={{ fontSize: '14px', fontWeight: 500, marginBottom: '3px' }}>{title}</p>
+                  <p style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>{desc}</p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -125,12 +132,8 @@ export default function App() {
         </div>
       </section>
 
-      <footer style={{ maxWidth: '860px', margin: '0 auto', padding: '2.5rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <p style={{ fontSize: '13px', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>Hecho con cariño · Máster RRHH 2024–25</p>
-        <a href="https://www.tesovia.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '13px', color: 'var(--text-tertiary)' }}>
-          Creado con <span style={{ color: 'var(--indigo)', fontWeight: 500, marginLeft: 4 }}>Tesovia</span>
-          <ExternalLink size={11} />
-        </a>
+      <footer style={{ maxWidth: '860px', margin: '0 auto', padding: '2.5rem 2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <p style={{ fontSize: '13px', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>Hecho con cariño · Máster RRHH 2025–26</p>
       </footer>
     </div>
   )
