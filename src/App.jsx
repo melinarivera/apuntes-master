@@ -4,7 +4,7 @@ import NoteCard from './NoteCard'
 import './index.css'
 
 const MY_NOTES = [
-  { id: 'own-1', materia: 'Compensación y beneficios', titulo: 'Resumen completo — estructuras salariales y retribución variable', descripcion: null, autor: 'Melina', paginas: null, pdf_url: null, es_propio: true, created_at: new Date().toISOString() },
+  { id: 'own-1', materia: 'Compensación y beneficios', titulo: 'Guías de estudio — Unidades 1 a 6', descripcion: null, autor: 'Melina', paginas: null, pdf_url: 'https://drive.google.com/drive/folders/1754YYI-UVY9Gtm5sm8KQNnp-2nOjdPpY?usp=sharing', es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-2', materia: 'Trabajo en equipos y liderazgo', titulo: 'Próximamente', descripcion: null, autor: 'Melina', paginas: null, pdf_url: null, es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-3', materia: 'Digitalización y analytics', titulo: 'Próximamente', descripcion: null, autor: 'Melina', paginas: null, pdf_url: null, es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-4', materia: 'Transformación digital en RRHH', titulo: 'Próximamente', descripcion: null, autor: 'Melina', paginas: null, pdf_url: null, es_propio: true, created_at: new Date().toISOString() },

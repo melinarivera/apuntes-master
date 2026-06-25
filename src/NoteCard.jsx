@@ -1,4 +1,4 @@
-import { FileText, Download, User, Clock } from 'lucide-react'
+import { FileText, FolderOpen, User, Clock } from 'lucide-react'
 
 const ACCENT_MAP = {
   'Compensación y beneficios': { color: '#4F46E5', bg: '#EEF2FF' },
@@ -93,7 +93,7 @@ export default function NoteCard({ note, isOwn }) {
           onMouseEnter={e => e.currentTarget.style.filter = 'brightness(0.95)'}
           onMouseLeave={e => e.currentTarget.style.filter = 'none'}
         >
-          <Download size={14} /> Descargar PDF
+          <FolderOpen size={14} /> Ver apuntes en Drive
         </a>
       ) : null}
     </div>
