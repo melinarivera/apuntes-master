@@ -56,11 +56,6 @@ export default function NoteCard({ note, isOwn }) {
           <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '16px', fontWeight: 500, lineHeight: 1.3 }}>
             {note.titulo}
           </h3>
-          {note.descripcion && (
-            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: 1.5 }}>
-              {note.descripcion}
-            </p>
-          )}
         </div>
 
         <div style={{ marginTop: 'auto', paddingTop: '10px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
