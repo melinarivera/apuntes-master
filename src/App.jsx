@@ -34,8 +34,8 @@ export default function App() {
           <Sparkles size={12} /> Máster RRHH · Cuatrimestre 2
         </div>
         <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(32px, 5vw, 52px)', fontWeight: 400, lineHeight: 1.15, maxWidth: '720px', marginBottom: '1.25rem' }}>
-          Apuntes del máster,<br />
-          <em style={{ fontStyle: 'italic', color: 'var(--indigo)' }}>directo desde mi libreta.</em>
+          Apuntes del máster y<br />
+          <em style={{ fontStyle: 'italic', color: 'var(--indigo)' }}>Guías de estudio</em>
         </h1>
         <p style={{ fontSize: '17px', color: 'var(--text-secondary)', maxWidth: '560px', lineHeight: 1.65, marginBottom: '2.5rem' }}>
           Les comparto mis resúmenes de este cuatri. Sin pedir nada a cambio — aunque si les sirven, un cafecito siempre se agradece ☕
