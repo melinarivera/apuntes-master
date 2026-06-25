@@ -2,7 +2,7 @@ import { FileText, FolderOpen, User, Clock } from 'lucide-react'
 
 const ACCENT_MAP = {
   'Compensación y beneficios': { color: '#4F46E5', bg: '#EEF2FF' },
-  'Trabajo en equipos y liderazgo': { color: '#0F766E', bg: '#CCFBF1' },
+  'Habilidades para la gestión de equipos': { color: '#0F766E', bg: '#CCFBF1' },
   'Digitalización y analytics': { color: '#C2410C', bg: '#FFF7ED' },
   'Transformación digital en RRHH': { color: '#92400E', bg: '#FEF3C7' },
   'default': { color: '#4F46E5', bg: '#EEF2FF' },
