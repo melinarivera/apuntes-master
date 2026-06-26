@@ -4,7 +4,7 @@ import NoteCard from './NoteCard'
 import './index.css'
 
 const MY_NOTES = [
-  { id: 'own-1', materia: 'Compensación y beneficios', titulo: 'Guías de estudio — Unidades 1 a 6', descripcion: null, autor: 'Melina', paginas: null, pdf_url: 'https://drive.google.com/drive/folders/1754YYI-UVY9Gtm5sm8KQNnp-2nOjdPpY?usp=sharing', es_propio: true, created_at: new Date().toISOString() },
+  { id: 'own-1', materia: 'Compensación y beneficios', titulo: 'Guías de estudio', descripcion: null, autor: 'Melina', paginas: null, pdf_url: 'https://drive.google.com/drive/folders/1754YYI-UVY9Gtm5sm8KQNnp-2nOjdPpY?usp=sharing', es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-2', materia: 'Habilidades para la gestión de equipos', titulo: 'Guías de estudio', descripcion: null, autor: 'Melina', paginas: null, pdf_url: 'https://drive.google.com/drive/folders/1rcDcl7Jg0Ca3saTM858iE5FpWPLoaWW_?usp=sharing', es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-3', materia: 'Digitalización y analytics', titulo: 'Guías de estudio', descripcion: null, autor: 'Melina', paginas: null, pdf_url: 'https://drive.google.com/drive/folders/1w-cYzwsWXUpZVZNwVJjvzhizxlrpbjaP?usp=drive_link', es_propio: true, created_at: new Date().toISOString() },
   { id: 'own-4', materia: 'Transformación digital en RRHH', titulo: 'Próximamente', descripcion: null, autor: 'Melina', paginas: null, pdf_url: null, es_propio: true, created_at: new Date().toISOString() },
